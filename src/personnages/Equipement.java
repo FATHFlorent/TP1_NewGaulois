@@ -13,6 +13,7 @@ public enum Equipement {
 		return equipements;
 	}
 
+	@Override
 	public String toString() {
 		return "[equipement = " + equipements + "]";
 	}

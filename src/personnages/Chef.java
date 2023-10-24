@@ -9,8 +9,8 @@ public class Chef {
 	public Chef(String nom, int force, Village village) {
 		this.nom = nom;
 		this.force = force;
-		this.effetPotion = effetPotion;
 		this.village = village;
+		village.setChef(this);
 	}
 
 	public String getNom() {
@@ -19,6 +19,10 @@ public class Chef {
 
 	public void setVillage(Village village) {
 		this.village = village;
+	}
+
+	public Village getVillage() {
+		return village;
 	}
 
 	public void parler(String texte) {
